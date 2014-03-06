@@ -1,11 +1,8 @@
 require 'minitest/autorun'
-require 'nokogiri'
+require 'inline_css'
 
 class InlineCSSTest < MiniTest::Unit::TestCase
   def test_identity
-    html = "<span></span>"
-    assert_inlines html, html
-
     html = <<-HTML
 <style>
 </style>
